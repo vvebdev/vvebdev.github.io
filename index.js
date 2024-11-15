@@ -14,7 +14,7 @@ vendor = ${navigator.vendor}
 
 isTelegram = ${isTelegram}
 
-appName = ${window.appName}
+appName = ${navigator.appName}
 `;  
 
 console.log(navigator)
