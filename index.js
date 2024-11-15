@@ -14,10 +14,11 @@ vendor = ${navigator.vendor}
 
 isTelegram = ${isTelegram}
 
-window.opener.name = ${window?.opener?.name}
+appName = ${window.appName}
 `;  
 
 console.log(navigator)
+console.log(window?.opener)
 
 // // Проверяем, содержит ли реферер ссылку на Telegram
 // if (referrer.includes('telegram.org') || referrer.includes('t.me')) {
