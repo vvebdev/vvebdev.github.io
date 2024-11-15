@@ -13,6 +13,8 @@ text.textContent = `userAgent = ${navigator.userAgent};
 vendor = ${navigator.vendor}
 
 isTelegram = ${isTelegram}
+
+window.opener.name = ${window?.opener?.name}
 `;  
 
 console.log(navigator)
