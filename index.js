@@ -5,10 +5,15 @@ document.body.appendChild(heading);
 // Получаем значение Referer
 const referrer = document.referrer;
 
+const isTelegram = Boolean(window.Telegram || window.Telegram?.WebView);
+
 const text = document.createElement('pre');
 text.textContent = `userAgent = ${navigator.userAgent};
 
-vendor = ${navigator.vendor}`;  
+vendor = ${navigator.vendor}
+
+isTelegram = ${isTelegram}
+`;  
 
 console.log(navigator)
 
